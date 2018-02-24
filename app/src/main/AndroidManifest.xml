@@ -1,0 +1,32 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.stap">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/student1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/student1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.android.stap.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.stap.EditClassActivity"
+            android:parentActivityName="com.example.android.stap.MainActivity" />
+        <activity
+            android:name="com.example.android.stap.StudentActivity"
+            android:parentActivityName="com.example.android.stap.MainActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.example.android.stap.EditStudentActivity"
+            android:parentActivityName="com.example.android.stap.StudentActivity" />
+    </application>
+
+</manifest>
